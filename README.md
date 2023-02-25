@@ -17,7 +17,10 @@ In this project, I'm using the forks I made of these programs, but feel free to 
 
 Make sure your machine has git installed:
 
-`sudo apt-get install git`
+```sh
+sudo apt-get update
+sudo apt-get install git
+```
 
 2. Clone this project
 
