@@ -27,15 +27,19 @@ or
 
 `git clone https://github.com/mreisroot/suckless-debian.git`
 
-3. Give the script permission to execute:
+3. cd into the script directory
+
+`cd suckless-debian`
+
+4. Give the script permission to execute:
 
 `chmod +x suckless-debian.sh`
 
-4. Run the script
+5. Run the script
 
 `./suckless-debian.sh`
 
-5. Go to a tty and start Xorg
+6. Go to a tty and start Xorg
 
 `startx`
 
