@@ -10,7 +10,7 @@ sudo su <<- EOF
   user="$user"
   home="$home"
   dependencies="build-essential xserver-xorg-core xserver-xorg-video-intel x11-xserver-utils x11-xkb-utils x11-utils xinit libx11-dev libxinerama-dev libxft-dev pkg-config xbacklight alsa-utils pcmanfm"
-  tools="dwm dmenu st slstatus "
+  tools="dwm dmenu st slstatus"
 
   # Install dependencies
   apt-get update
