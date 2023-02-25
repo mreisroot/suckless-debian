@@ -2,7 +2,7 @@
 
 The [suckless-debian.sh](./suckless-debian.sh) automatically installs some suckless tools on Debian or Debian-based systems, speeding up the setup process.
 
-The tools installed are:
+The installed tools are:
 
 * dwm
 * dmenu
@@ -45,4 +45,4 @@ or
 
 ## License
 
-License under the [GNU General Public License v2.0](./LICENSE)
+Licensed under the [GNU General Public License v2.0](./LICENSE)
