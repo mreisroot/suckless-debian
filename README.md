@@ -46,6 +46,40 @@ or
 
 `startx`
 
+### Testing
+
+If you want to try this script quickly, without having to make a physical installation of Debian or a Debian-based system, you can use the testing environment I'm providing with the [Vagrantfile](./Vagrantfile) and [provision.sh](./provision.sh) files.
+
+The Vagrantfile file has the specifications for the VM to be created.
+
+The provision.sh script runs after the VM is created to automatically run the necessary steps to test the suckless-debian.sh script.
+
+1. Make sure you have VirtualBox and Vagrant installed:
+
+* [Install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [Install Vagrant](https://developer.hashicorp.com/vagrant/downloads)
+
+2. Run the following command to create the VM:
+
+`vagrant up`
+
+3. Login credentials
+
+```sh
+login: root
+password: vagrant
+```
+
+4. Starting the window manager
+
+The VirtualBox GUI will appear and, after all commands of the provision.sh and suckless-void.sh scripts have been executed, you can test the desktop by running inside the VM:
+
+`startx`
+
+5. To destroy the VM, run:
+
+`vagrant destroy -f`
+
 ## License
 
 Licensed under the [GNU General Public License v2.0](./LICENSE)
