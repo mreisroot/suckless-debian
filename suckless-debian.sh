@@ -9,11 +9,12 @@ sudo su <<- EOF
   # Variables
   user="$user"
   home="$home"
-  dependencies="build-essential xserver-xorg-core xserver-xorg-video-intel x11-xserver-utils x11-xkb-utils x11-utils xinit libx11-dev libxinerama-dev libxft-dev pkg-config xbacklight alsa-utils pcmanfm"
+  dependencies="build-essential tcc xserver-xorg-core xserver-xorg-video-intel x11-xserver-utils x11-xkb-utils x11-utils xinit libx11-dev libxinerama-dev libxft-dev pkg-config xbacklight alsa-utils vim tmux lynx pcmanfm"
   tools="dwm dmenu st slstatus"
 
-  # Install dependencies
+  # Upgrade system and install dependencies
   apt-get update
+  apt-get upgrade -y && apt-get dist-upgrade -y
   apt-get install -y \$dependencies
   
   # Clone repos
@@ -30,7 +31,7 @@ sudo su <<- EOF
   done
 
   # Copy .xinitrc file to home directory
-  cp ./.xinitrc \${home}/.xinitrc
+  cp \${home}/suckless-debian/.xinitrc \${home}/.xinitrc
 
   # Adjusting permissions
   chown -R \${user}:\${user} \${home}/.config
