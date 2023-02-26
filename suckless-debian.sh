@@ -9,7 +9,7 @@ sudo su <<- EOF
   # Variables
   user="$user"
   home="$home"
-  dependencies="build-essential tcc xserver-xorg-core xserver-xorg-video-intel x11-xserver-utils x11-xkb-utils x11-utils xinit libx11-dev libxinerama-dev libxft-dev pkg-config xbacklight alsa-utils vim tmux lynx pcmanfm"
+  dependencies="build-essential tcc xserver-xorg-core xserver-xorg-video-intel x11-xserver-utils x11-xkb-utils x11-utils xinit libx11-dev libxinerama-dev libxft-dev pkg-config xbacklight alsa-utils vim tmux lynx pass pcmanfm"
   tools="dwm dmenu st slstatus"
 
   # Upgrade system and install dependencies
